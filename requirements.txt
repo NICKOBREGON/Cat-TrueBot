@@ -5,3 +5,4 @@ faiss-cpu
 PyPDF2
 huggingface_hub
 tiktoken
+pdfminer.six
