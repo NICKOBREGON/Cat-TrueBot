@@ -3,6 +3,6 @@ langchain
 langchain-community
 faiss-cpu
 PyPDF2
+pypdf
 huggingface_hub
 tiktoken
-pdfminer.six
