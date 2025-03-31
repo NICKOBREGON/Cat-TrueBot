@@ -1,5 +1,6 @@
 streamlit
 langchain
+langchain-community
 faiss-cpu
 PyPDF2
 huggingface_hub
