@@ -6,3 +6,4 @@ PyPDF2
 pypdf
 huggingface_hub
 tiktoken
+InstructorEmbedding
