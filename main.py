@@ -28,11 +28,12 @@ if uploaded_file is not None:
     retriever = vectorstore.as_retriever()
 
     llm = HuggingFaceHub(
-        repo_id="google/flan-t5-large",
-        model_kwargs={"temperature": 0.3, "max_length": 512},
-        huggingfacehub_api_token=hf_token
-    )
-
+    repo_id="tiiuae/falcon-7b-instruct",
+    task="text-generation",
+    model_kwargs={"temperature": 0.3, "max_new_tokens": 512},
+    huggingfacehub_api_token=hf_token
+)
+    
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
