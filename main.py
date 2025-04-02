@@ -28,7 +28,7 @@ if uploaded_file is not None:
     retriever = vectorstore.as_retriever()
 
     llm = HuggingFaceHub(
-    repo_id="tiiuae/falcon-7b-instruct",
+    repo_id="mistralai/Mistral-7B-Instruct-v0.1",
     task="text-generation",
     model_kwargs={"temperature": 0.3, "max_new_tokens": 512},
     huggingfacehub_api_token=hf_token
